@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.baiwei.te">
+    package="com.example.baiwei.zkmt">
 
     <application
         android:allowBackup="true"
@@ -10,12 +10,41 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".Login"></activity>
+        <activity android:name=".Register"></activity>
+        <activity android:name="com.example.baiwei.pages.Charge"></activity>
+        <activity android:name="com.example.baiwei.pages.Transfer"></activity>
+        <activity android:name="com.example.baiwei.pages.Withdraw"></activity>
+        <activity android:name="com.example.baiwei.pages.Registe"></activity>
+        <activity android:name="com.example.baiwei.pages.Bonus"></activity>
+        <activity android:name="com.example.baiwei.pages.Achievement"></activity>
+        <activity android:name="com.example.baiwei.pages.Deliver"></activity>
+        <activity android:name="com.example.baiwei.func.Withdraw_func"></activity>
+        <activity android:name="com.example.baiwei.pages.Graph">
+
+        </activity>
+        <activity android:name="com.example.baiwei.pages.Notice"></activity>
+        <activity android:name="com.example.baiwei.pages.Rebuy"></activity>
+        <activity android:name="com.example.baiwei.pages.Transaction"></activity>
+        <activity android:name=".Launch1" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.baiwei.func.Transfer_func"></activity>
+        <activity android:name="com.example.baiwei.func.Notice_func"></activity>
+        <activity android:name="com.example.baiwei.func.Charge_func"></activity>
+        <activity android:name="com.example.baiwei.func.Bonus_ad"></activity>
+        <activity android:name="com.example.baiwei.func.Bonus_performance"></activity>
+        <activity android:name="com.example.baiwei.func.Bonus_cultivate"></activity>
+
+        <activity android:name="com.example.baiwei.func.Bonus_distributor"></activity>
+
+        <activity android:name="com.example.baiwei.pages.Sub"></activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 

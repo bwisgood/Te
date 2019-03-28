@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    >
+
+    <com.example.baiwei.pages.CustomTitleBar
+        android:id="@+id/ct_graph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="节点关系图" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:paddingTop="50dp">
+
+        <TableLayout
+            android:visibility="gone"
+            android:id="@+id/re_table1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tablerow_tv_white">
+            <TableRow android:background="@drawable/tablerow_tv_white">
+                <TextView android:text="安置会员"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="激活会员"/>
+            </TableRow>
+        </TableLayout>
+
+
+        <TableLayout
+            android:id="@+id/table1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tablerow_tv_white">
+
+            <TableRow android:background="@drawable/tablerow_tv_white">
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/tv_username1"
+                    android:layout_span="2"
+                    android:text="zt12345678" />
+            </TableRow>
+
+            <TableRow android:background="@drawable/tablerow_tv_white">
+
+                <TextView
+                    android:id="@+id/tv_realname1"
+                    android:layout_span="2"
+                    android:gravity="center"
+                    android:text="中肽生物" />
+            </TableRow>
+
+            <TableRow android:background="@drawable/tablerow_tv_white">
+
+                <TextView
+                    android:id="@+id/tv_level1"
+                    android:layout_span="2"
+                    android:gravity="center"
+                    android:text="VIP会员" />
+            </TableRow>
+
+            <TableRow android:background="@drawable/tablerow_tv_white">
+
+                <TextView
+                    android:id="@+id/node_amount1"
+                    android:layout_span="2"
+                    android:gravity="center"
+
+                    android:text="91.3" />
+            </TableRow>
+
+            <TableRow android:background="@drawable/tablerow_tv_white">
+
+                <TextView
+                    android:id="@+id/node_amount_left1"
+                    android:gravity="center"
+                    android:paddingRight="20dp"
+                    android:text="171" />
+
+                <TextView
+                    android:id="@+id/node_amount_right1"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:text="20" />
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="#000" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:background="#000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="100dp"
+                android:background="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TableLayout
+                android:visibility="gone"
+                android:id="@+id/re_table2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/tablerow_tv_white">
+                <TableRow android:background="@drawable/tablerow_tv_white">
+                    <TextView android:text="安置会员"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="激活会员"/>
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:id="@+id/table2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tablerow_tv_white"
+                android:layout_marginRight="50dp">
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tv_username2"
+                        android:layout_span="2"
+                        android:text="zt12345678" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/tv_realname2"
+                        android:layout_span="2"
+                        android:gravity="center"
+                        android:text="中肽生物" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/tv_level2"
+                        android:layout_span="2"
+                        android:gravity="center"
+                        android:text="VIP会员" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/node_amount2"
+                        android:layout_span="2"
+                        android:gravity="center"
+
+                        android:text="91.3" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/node_amount_left2"
+                        android:gravity="center"
+                        android:paddingRight="20dp"
+                        android:text="171" />
+
+                    <TextView
+                        android:id="@+id/node_amount_right2"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:text="20" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:visibility="gone"
+                android:id="@+id/re_table3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tablerow_tv_white">
+                <TableRow android:background="@drawable/tablerow_tv_white">
+                    <TextView android:text="安置会员"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="激活会员"/>
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/table3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tablerow_tv_white">
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tv_username3"
+                        android:layout_span="2"
+                        android:text="zt12345678" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/tv_realname3"
+                        android:layout_span="2"
+                        android:gravity="center"
+                        android:text="中肽生物" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/tv_level3"
+                        android:layout_span="2"
+                        android:gravity="center"
+                        android:text="VIP会员" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/node_amount3"
+                        android:layout_span="2"
+                        android:gravity="center"
+
+                        android:text="91.3" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/node_amount_left3"
+                        android:gravity="center"
+                        android:paddingRight="20dp"
+                        android:text="171" />
+
+                    <TextView
+                        android:id="@+id/node_amount_right3"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:text="20" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:background="#000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="150dp"
+                android:background="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_marginRight="20dp"
+                android:background="#000" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:background="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="100dp"
+                android:background="#000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:background="#000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:background="#000" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="100dp"
+                android:background="#000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:visibility="gone"
+                android:id="@+id/re_table4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tablerow_tv_white">
+                <TableRow android:background="@drawable/tablerow_tv_white">
+                    <TextView android:text="安置会员"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="激活会员"/>
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/table4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tablerow_tv_white">
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tv_username4"
+                        android:layout_span="2"
+                        android:text="zt12345678" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/tv_realname4"
+                        android:layout_span="2"
+                        android:gravity="center"
+                        android:text="中肽生物" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/tv_level4"
+                        android:layout_span="2"
+                        android:gravity="center"
+                        android:text="VIP会员" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/node_amount4"
+                        android:layout_span="2"
+                        android:gravity="center"
+
+                        android:text="91.3" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/node_amount_left4"
+                        android:gravity="center"
+                        android:paddingRight="20dp"
+                        android:text="171" />
+
+                    <TextView
+                        android:id="@+id/node_amount_right4"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:text="20" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:visibility="gone"
+                android:id="@+id/re_table5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tablerow_tv_white">
+                <TableRow android:background="@drawable/tablerow_tv_white">
+                    <TextView android:text="安置会员"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="激活会员"/>
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/table5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tablerow_tv_white">
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tv_username5"
+                        android:layout_span="2"
+                        android:text="zt12345678" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/tv_realname5"
+                        android:layout_span="2"
+                        android:gravity="center"
+                        android:text="中肽生物" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/tv_level5"
+                        android:layout_span="2"
+                        android:gravity="center"
+                        android:text="VIP会员" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/node_amount5"
+                        android:layout_span="2"
+                        android:gravity="center"
+
+                        android:text="91.3" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/node_amount_left5"
+                        android:gravity="center"
+                        android:paddingRight="20dp"
+                        android:text="171" />
+
+                    <TextView
+                        android:id="@+id/node_amount_right5"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:text="20" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:visibility="gone"
+                android:id="@+id/re_table6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tablerow_tv_white">
+                <TableRow android:background="@drawable/tablerow_tv_white">
+                    <TextView android:text="安置会员"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="激活会员"/>
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/table6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tablerow_tv_white">
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tv_username6"
+                        android:layout_span="2"
+                        android:text="zt12345678" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/tv_realname6"
+                        android:layout_span="2"
+                        android:gravity="center"
+                        android:text="中肽生物" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/tv_level6"
+                        android:layout_span="2"
+                        android:gravity="center"
+                        android:text="VIP会员" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/node_amount6"
+                        android:layout_span="2"
+                        android:gravity="center"
+
+                        android:text="91.3" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/node_amount_left6"
+                        android:gravity="center"
+                        android:paddingRight="20dp"
+                        android:text="171" />
+
+                    <TextView
+                        android:id="@+id/node_amount_right6"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:text="20" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:visibility="gone"
+                android:id="@+id/re_table7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tablerow_tv_white">
+                <TableRow android:background="@drawable/tablerow_tv_white">
+                    <TextView android:text="安置会员"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="激活会员"/>
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/table7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tablerow_tv_white">
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tv_username7"
+                        android:layout_span="2"
+                        android:text="zt12345678" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/tv_realname7"
+                        android:layout_span="2"
+                        android:gravity="center"
+                        android:text="中肽生物" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/tv_level7"
+                        android:layout_span="2"
+                        android:gravity="center"
+                        android:text="VIP会员" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/node_amount7"
+                        android:layout_span="2"
+                        android:gravity="center"
+
+                        android:text="91.3" />
+                </TableRow>
+
+                <TableRow android:background="@drawable/tablerow_tv_white">
+
+                    <TextView
+                        android:id="@+id/node_amount_left7"
+                        android:gravity="center"
+                        android:paddingRight="20dp"
+                        android:text="171" />
+
+                    <TextView
+                        android:id="@+id/node_amount_right7"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:text="20" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/node_id1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/node_id2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/node_id3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/node_id4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/node_id5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/node_id6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/node_id7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/node_section1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/node_section2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/node_section3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/node_section4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/node_section5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/node_section6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/node_section7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/user_id1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/user_id2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/user_id3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/user_id4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/user_id5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/user_id6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/user_id7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>
